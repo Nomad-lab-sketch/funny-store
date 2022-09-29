@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="container_item" *ngFor="let item of cartList">
+      <div class="container_item-title">
+        {{ item.title }}
+        <div class="container_item-title-price">
+          {{ item.price | currency: "RUB":"symbol-narrow" }}
+        </div>
+      </div>
+      <div class="container_item-img">
+        <app-image [img]="item.img" [alt]="'img'"></app-image>
+      </div>
+      <div class="container_item-button">
+        <app-simple-button
+          [buttonType]="'delete'"
+          [handler]="remove.bind(this)"
+          [id]="item.id"
+        ></app-simple-button>
+      </div>
+    </div>
+	<div [ngSwitch]="cartList | isEmpty">
+		<div class="container_submit" *ngSwitchCase="false">
+			<div class="container_submit-summary">
+			  <div class="container_submit-summary-header">
+				<span>Итого:</span>
+				<div class="container_submit-summary-header-total-items">
+				  {{ this.cartList.length }} Товар
+				</div>
+			  </div>
+			  <div class="container_submit-summary-header-total">
+				{{ amountOfGoods() | currency: "RUB":"symbol-narrow" }}
+			  </div>
+			  <app-simple-button [buttonType]="'success'"></app-simple-button>
+			</div>
+		  </div>
+
+		  <div class="container_empty" *ngSwitchCase="true">
+			<div class="container_empty-cart">
+                   <span>Тут пусто :(</span>  <svg-icon src="../../../assets/icons/empty-cart.svg"
+				   [svgStyle]="{
+					 width: '48px',
+					 height: '48px',
+					 fill: '#0000ff'
+				   }"></svg-icon>): 
+			</div>
+		  </div>
+
+	</div>
+
+  </div>
+</div>

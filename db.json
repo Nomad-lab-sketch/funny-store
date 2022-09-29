@@ -1,0 +1,58 @@
+{
+  "catalog": [
+    {
+      "id": 1,
+      "img": "https://c4.wallpaperflare.com/wallpaper/565/305/193/cyberpunk-2077-cyberpunk-video-game-art-samurai-video-games-hd-wallpaper-preview.jpg",
+      "title": "Cyberpunk",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "img": "https://c4.wallpaperflare.com/wallpaper/421/270/395/video-game-escape-from-tarkov-escape-from-tarkov-wallpaper-preview.jpg",
+      "title": "Escape from Tarkov",
+      "price": 1900
+    },
+    {
+      "id": 3,
+      "img": "https://c4.wallpaperflare.com/wallpaper/653/449/282/video-game-subnautica-creature-wallpaper-preview.jpg",
+      "title": "Subnautica",
+      "price": 1900
+    },
+    {
+      "id": 4,
+      "img": "https://c4.wallpaperflare.com/wallpaper/489/876/39/elden-ring-from-software-fromsoftware-hd-wallpaper-preview.jpg",
+      "title": "Elden Ring",
+      "price": 1900
+    },
+    {
+      "id": 5,
+      "img": "https://c4.wallpaperflare.com/wallpaper/665/421/66/the-witcher-3-wild-hunt-geralt-of-rivia-ciri-wallpaper-preview.jpg",
+      "title": "The Witcher 3 Wild Hunt",
+      "price": 1900
+    },
+    {
+      "id": 6,
+      "img": "https://c4.wallpaperflare.com/wallpaper/81/511/796/horizon-zero-dawn-aloy-horizon-zero-dawn-video-games-wallpaper-preview.jpg",
+      "title": "Horizon zero dawn",
+      "price": 1900
+    }
+  ],
+  "cartList": [],
+  "slider": [
+    {
+      "img": "https://images.alphacoders.com/946/946776.png",
+      "id": 1,
+      "alt": "img"
+    },
+    {
+      "img": "https://images4.alphacoders.com/115/1151249.jpg",
+      "id": 2,
+      "alt": "img"
+    },
+    {
+      "img": "https://searchthisweb.com/wallpaper/red-dead-redemption-2_3840x2160_i904k.jpg",
+      "id": 3,
+      "alt": "img"
+    }
+  ]
+}

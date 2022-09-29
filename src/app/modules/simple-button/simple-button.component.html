@@ -1,0 +1,17 @@
+<div class="wrapper" (click)="handler(id)">
+   <div class="container">
+        <div class="container_icon">
+			<svg-icon
+			src={{svg}}
+			[svgStyle]="{
+			  width: '48px',
+			  height: '48px',
+			  fill
+			}"
+		  ></svg-icon>
+		</div>
+		<div class="container_title" [ngStyle]="{background: background}">
+             {{title}}
+		</div>
+   </div>
+</div>

@@ -18,6 +18,8 @@ import { CatalogListComponent } from './modules/catalog-list/catalog-list.compon
 import { ShoppingCartComponent } from './components/content/shopping-cart/shopping-cart.component';
 import { ImageComponent } from './modules/image/image.component';
 import { ToastComponent } from './modules/toast/toast.component';
+import { IsEmptyPipe } from './pipes/is-empty.pipe';
+import { ModalWindowComponent } from './modules/modal-window/modal-window.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ToastComponent } from './modules/toast/toast.component';
     ShoppingCartComponent,
     ImageComponent,
     ToastComponent,
+    IsEmptyPipe,
+    ModalWindowComponent,
   ],
   imports: [
     BrowserModule,

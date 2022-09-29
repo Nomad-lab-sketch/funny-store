@@ -1,15 +1,23 @@
 <div class="wrapper">
   <div class="container">
-	<app-toast></app-toast>
-    <div class="container_nav">
-      <app-side-navigate></app-side-navigate>
-    </div>
+    <app-toast></app-toast>
+    <app-modal-window
+      [isOpen]="commonService.isActiveWindowModal"
+      (isCloseModal)="commonService.changeIsActiveWindowModal(false)"
+    ></app-modal-window>
     <div class="container_content">
-      <header class="container_content_header"><app-header></app-header></header>
-      <div class="container_content_main">
+      <header class="container_content_header">
+        <app-header></app-header>
+      </header>
+      <div class="container_nav" #refToNav [ngClass]="{ scroll: activeScroll }">
+        <app-side-navigate></app-side-navigate>
+      </div>
+      <div class="container_content_main" [ngClass]="{ mr: activeScroll }">
         <router-outlet></router-outlet>
       </div>
-      <footer class="container_content_footer"><app-footer></app-footer></footer>
+      <footer class="container_content_footer">
+        <app-footer></app-footer>
+      </footer>
     </div>
   </div>
 </div>

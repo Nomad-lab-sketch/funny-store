@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="content">
+	<div class="content_search" (click)="commonService.changeIsActiveWindowModal(true)" >
+		<svg-icon
+		src="../../../assets/icons/menu/search.svg"
+		[svgStyle]="{
+		  width: '48px',
+		  height: '48px',
+		  fill: '#FF5B41'
+		}"
+	  ></svg-icon>
+	  <span>Поиск игр</span>
+	 </div>
+	   <input class="content_search-input" [ngClass]="{'open': commonService.isActiveWindowModal}" type="text" placeholder="Search...">  
+    <ul class="content_list">
+      <li class="content_list-item" *ngFor="let item of listPath">
+        <a routerLink="{{ item.pathUrl }}" routerLinkActive="active-link">
+          <span>{{ item.title }}</span>
+        </a>
+      </li>
+    </ul>
+    <div class="content_profile">
+      <div class="content_profile-photo"><img src="../../../assets/icons/me.jpg" alt="avatar"></div>
+    </div>
+  </div>
+</div>

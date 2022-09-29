@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="container">
+    <img
+      *ngFor="let item of listImg; let i = index"
+      [src]="item.img"
+      [alt]="item.alt"
+      [ngClass]="{ 'image-active': activeSlide === i }"
+    />
+    <div class="container_content">
+      <div class="container_content_title">
+        <h2>Game</h2>
+        <h3>eSTRIX Game Store</h3>
+      </div>
+      <div class="container_content_info">
+        <p>Choose your copy of game based on the platform(s)</p>
+      </div>
+    </div>
+  </div>
+</div>

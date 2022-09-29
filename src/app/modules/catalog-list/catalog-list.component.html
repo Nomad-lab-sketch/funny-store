@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <h1>{{ title }}</h1>
+  <div class="container">
+    <app-card
+      *ngFor="let item of items"
+      [item]="item"
+    ></app-card>
+  </div>
+</div>

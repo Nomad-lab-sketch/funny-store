@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <div class="container">
+         <div class="container_img">
+			<app-image [img]="item.img" [alt]="'img'"></app-image>
+		 </div>
+		 <div class="container_title">
+              <h4>{{item.title}}</h4>
+			  <span class="container_title-price">{{item.price | currency: "RUB":"symbol-narrow"}}</span>
+		 </div>
+	</div>
+</div>

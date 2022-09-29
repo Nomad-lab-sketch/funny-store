@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="container_slider"><app-slider [listImg]="listImg"></app-slider></div>
+    <div class="container_catalog" *ngIf="!error">
+      <app-catalog-list
+        [title]="'PC'"
+        [items]="productCards"
+      ></app-catalog-list>
+      <app-catalog-list
+        [title]="'PS4'"
+        [items]="productCards"
+      ></app-catalog-list>
+      <app-catalog-list
+        [title]="'PS5'"
+        [items]="productCards"
+      ></app-catalog-list>
+    </div>
+  </div>
+</div>

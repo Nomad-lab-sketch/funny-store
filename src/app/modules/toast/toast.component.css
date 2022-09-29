@@ -1,0 +1,23 @@
+.toast {
+  background-color: #f34642;
+  height: 70px;
+  width: 20%;
+  font-size: 11pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  z-index: 3;
+  right: 2%;
+  top: 1%;
+  padding: 10px;
+  opacity: 0;
+  transform: translate(0px, -300%);
+  transition: 0.5s ease-in-out;
+}
+
+.toast.active {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}

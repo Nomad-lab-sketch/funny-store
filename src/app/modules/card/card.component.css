@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper:hover {
+  border-radius: 6px;
+  outline: 1px solid grey;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper:hover .container_title {
+  color: #0057ff;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.container_title {
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_title h4 {
+  max-width: 200px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container_title-price {
+  text-decoration: underline;
+  font-weight: 700;
+}

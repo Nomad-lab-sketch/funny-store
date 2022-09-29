@@ -10,9 +10,16 @@
 }
 
 .container_nav {
+  z-index: 3;
+}
+
+.scroll {
   position: fixed;
-  left: 0;
-  z-index: 1;
+  width: 100%;
+}
+
+.mr {
+  margin-top: 80px;
 }
 
 .container_content {
@@ -23,16 +30,9 @@
 
 .container_content_main {
   flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .container_content_footer {
   margin-top: auto;
-}
-
-@media screen and (max-width: 1920px) {
-  .container_nav {
-    width: 18%;
-  }
 }
